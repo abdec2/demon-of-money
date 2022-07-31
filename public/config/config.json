@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0x929064151cda8C646cC0C0657ad9CC83ad200156",
+  "SCAN_LINK": "https://etherscan.io/address/0x929064151cda8C646cC0C0657ad9CC83ad200156",
+  "NETWORK": {
+    "NAME": "Ethereum Mainnet",
+    "SYMBOL": "ETH",
+    "ID": 1 
+
+},
+  "NFT_NAME": "Demon of Money",
+  "SYMBOL": "DOM",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 300000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/",
+  "SHOW_BACKGROUND": true
+}
