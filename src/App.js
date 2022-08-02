@@ -155,7 +155,7 @@ function App() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei;
     let totalGasLimit;
-    if(mintPerAddress >= 1) {
+    if (mintPerAddress >= 1) {
       totalCostWei = String(cost * mintAmount);
       totalGasLimit = String(gasLimit * mintAmount);
     } else {
@@ -242,10 +242,10 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bgg.png" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/collage.png" : null}
       >
-        <div style={{ maxWidth: '280px', zIndex: 1 }}>
-          <img  src="/config/images/logo.png" style={{ width: '100%' }} />
+        <div style={{ maxWidth: '600px', zIndex: 1 }}>
+          <img src="/config/images/header.jpg" style={{ width: '100%' }} />
         </div>
         <s.SpacerLarge />
         <ResponsiveWrapper style={{ padding: 24, zIndex: 1 }} >
@@ -264,6 +264,9 @@ function App() {
               maxWidth: '600px'
             }}
           >
+            <div style={{ maxWidth: '100px', zIndex: 1 }}>
+              <img src="/config/images/logo.png" style={{ width: '100%' }} />
+            </div>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -307,7 +310,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs { (data.cost !== 0) ? Web3.utils.fromWei(data.cost) : CONFIG.DISPLAY_COST}{" "}
+                  1 {CONFIG.SYMBOL} costs {(data.cost !== 0) ? Web3.utils.fromWei(data.cost) : CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
                 <s.SpacerXSmall />
@@ -424,7 +427,7 @@ function App() {
                         {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                       <StyledLink2
-                        target={"_blank"} href={CONFIG.MARKETPLACE_LINK+blockchain.account}
+                        target={"_blank"} href={CONFIG.MARKETPLACE_LINK + blockchain.account}
                       >
                         Opensea
                       </StyledLink2>
