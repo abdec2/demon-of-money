@@ -310,8 +310,9 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {(data.cost !== 0) ? Web3.utils.fromWei(data.cost) : CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}
+                  FREEMINT <br />
+                  1st one FREE, the rest {(data.cost !== 0) ? Web3.utils.fromWei(data.cost) : CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}. 10 per wallet
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
